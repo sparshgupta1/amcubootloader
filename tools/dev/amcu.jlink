@@ -1,0 +1,10 @@
+si 1
+device CY8C6XXA_CM0P
+speed 4000
+rsettype 3
+r
+loadfile amcuappA.bin, 0x10000000
+rsettype 3
+r
+go
+exit

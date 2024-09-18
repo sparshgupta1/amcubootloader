@@ -1,0 +1,3 @@
+[submodule "amcu"]
+	path = amcu
+	url = ssh://git@github.com:sparshgupta1/amcu.git

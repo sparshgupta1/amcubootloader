@@ -1,0 +1,13 @@
+si 1
+device CY8C6XXA_CM0P
+speed 4000
+rsettype 3
+r
+loadfile amcu_toc2_zero.bin, 0x16007C00
+loadfile amcu_public_key_zero.bin, 0x16005A00
+loadfile amcuappA.bin, 0x10000000
+loadfile amcuappB.bin, 0x10100000
+rsettype 3
+r
+go
+exit

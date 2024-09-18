@@ -1,0 +1,13 @@
+set(CMAKE_SYSTEM_NAME Linux)
+set(CMAKE_SYSTEM_PROCESSOR x86)
+
+set (TOOLCHAIN_PATH "/usr/bin/")
+set (CMAKE_C_COMPILER       "${TOOLCHAIN_PATH}/gcc" CACHE PATH "" FORCE)
+set (CMAKE_CXX_COMPILER     "${TOOLCHAIN_PATH}/g++" CACHE PATH "" FORCE)
+set (CMAKE_C_FLAGS          "${CMAKE_C_FLAGS} -Os -Wall -Wextra -Werror -D__FILENAME__='\"$(notdir $(abspath $<))\"'")
+set (CMAKE_CXX_FLAGS        "${CMAKE_CXX_FLAGS} -Os -Wall -Wextra -Werror -D__FILENAME__='\"$(notdir $(abspath $<))\"'")
+
+set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
+set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
+set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
+set(CMAKE_FIND_ROOT_PATH_MODE_PACKAGE ONLY)
