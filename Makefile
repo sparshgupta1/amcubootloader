@@ -63,7 +63,7 @@ githooks-amcu:
 
 .PHONY: covdb covamcu-full clean TAGS
 
-amcu-full: githooks-amcu
+amcu-full:
 	@echo "Running amcu build"
 	$(CD) $(AMCU_DIR); \
 	$(MAKE) amcuapp;
