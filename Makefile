@@ -89,9 +89,7 @@ refresh-libs:
 	$(CD) $(AMCU_DIR)/src/app_cm4/; \
 	$(MAKE) getlibs; \
 	$(CD) libs/TARGET_CY8CKIT-062S2-43012/; \
-	git apply ../../../../mtb_shared/infn-patch/TARGET_CY8CKIT-062S2-43012-FW9645-1.patch; \
 	$(CD) $(AMCU_DIR)/src/app_cm0p/libs/TARGET_CY8CKIT-062S2-43012/; \
-	git apply ../../../../mtb_shared/infn-patch/TARGET_CY8CKIT-062S2-43012-FW9645-1.patch; \
 	$(CD) ../../;
 	@echo "Creating licenses directory"
 	@echo "--------------------------------------------------------------------"
